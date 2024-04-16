@@ -122,7 +122,7 @@ namespace ST10266914___POE
             string option = Console.ReadLine();
             if (option.Equals("Yes"))
             {
-
+                Console.WriteLine("You have reset your recipe");
                 ingredient.Clear();
                 steps.Clear();
             }
