@@ -15,7 +15,7 @@ namespace ST10266914___POE
         //A line of code which allows for data to be stored and retrieved in a variable when called//
         public string Measurement {  get; set; }
 
-
+        public int OriginalQuantity { get; set; }
 
 
     }
