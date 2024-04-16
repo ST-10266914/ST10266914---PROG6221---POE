@@ -62,14 +62,14 @@ namespace ST10266914___POE
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("====================");
             Console.ResetColor();
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\nRecipe");
             Console.WriteLine("Ingredients:");
             Console.ResetColor();
 
             foreach(Ingredients ingredients in ingredient)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"{ingredients.Quantity} {ingredients.Measurement} of {ingredients.Name}");
                 Console.ResetColor();
             }
@@ -80,12 +80,12 @@ namespace ST10266914___POE
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("====================");
             Console.ResetColor();
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Steps: ");
             Console.ResetColor();
             for(int i = 0; i < steps.Count; i++)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"{i + 1}. {steps[i]}");
                 Console.ResetColor();
             }
@@ -122,6 +122,7 @@ namespace ST10266914___POE
             string option = Console.ReadLine();
             if (option.Equals("Yes"))
             {
+
                 ingredient.Clear();
                 steps.Clear();
             }
