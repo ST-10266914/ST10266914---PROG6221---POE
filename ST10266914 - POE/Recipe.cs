@@ -111,7 +111,7 @@ namespace ST10266914___POE
         {
             foreach(Ingredients ingredients in ingredient)
             {
-                ingredients.Quantity /= ingredients.Quantity;
+                ingredients.Quantity = ingredients.OriginalQuantity;
             }
         }
 
