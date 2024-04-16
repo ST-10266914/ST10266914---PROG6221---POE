@@ -34,7 +34,7 @@ namespace ST10266914___POE
                 Console.WriteLine("Quantity of Ingredient: ");
                 int originalQuantity = int.Parse(Console.ReadLine());
                 int quantity = 0;
-                originalQuantity = quantity;
+                quantity = originalQuantity;
 
                 Console.WriteLine("Enter your unit of Measurement(eg.tablespoon/teaspoon)");
                 string measurement = Console.ReadLine();
