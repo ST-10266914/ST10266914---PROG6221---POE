@@ -115,8 +115,18 @@ namespace ST10266914___POE
         //Method for clearing the recipe to add a new one//
         public void ClearRecipe()
         {
-            ingredient.Clear();
-            steps.Clear();
+            Console.WriteLine("Do you want to clear you recipe? Yes/No");
+            string option = Console.ReadLine();
+            if (option.Equals("Yes"))
+            {
+                ingredient.Clear();
+                steps.Clear();
+            }
+            else
+            {
+                Console.WriteLine("No recipe was cleared");
+            }
+            
         }
     }
 }
