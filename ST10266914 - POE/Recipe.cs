@@ -59,7 +59,7 @@ namespace ST10266914___POE
         //mehtod for displaying info after inputing the necessary values//
         public void DisplayInfo()
         {
-            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("====================");
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Green;
@@ -73,7 +73,7 @@ namespace ST10266914___POE
                 Console.WriteLine($"{ingredients.Quantity} {ingredients.Measurement} of {ingredients.Name}");
                 Console.ResetColor();
             }
-            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("====================");
             Console.ResetColor();
 
