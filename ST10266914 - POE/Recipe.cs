@@ -32,12 +32,15 @@ namespace ST10266914___POE
 
 
                 Console.WriteLine("Quantity of Ingredient: ");
-                int quantity = int.Parse(Console.ReadLine());
+                int originalQuantity = int.Parse(Console.ReadLine());
+                int quantity = 0;
+                originalQuantity = quantity;
 
                 Console.WriteLine("Enter your unit of Measurement(eg.tablespoon/teaspoon)");
                 string measurement = Console.ReadLine();
 
-                ingredient.Add(new Ingredients(name, quantity, measurement));
+                ingredient.Add(new Ingredients(name, quantity, measurement,originalQuantity));
+                
 
             }
 
